@@ -8,11 +8,6 @@
   </head>
 
   <body>
-    <div class="topbar">
-      <p>Gratis antar untuk pesanan di atas Rp 50.000</p>
-      <p>Chat WA: <a href="https://wa.me/6281234567890">0812-3456-7890</a></p>
-    </div>
-
     <nav class="navbar">
       <span class="logo">🥬 Toko Sayur Bu Ani</span>
       <ul class="nav-links">
@@ -25,84 +20,20 @@
 
     <section id="beranda" class="hero">
       <div class="hero-teks">
-        <span class="eyebrow">Langsung dari kebun ke meja makan</span>
-        <h1>Sayur Segar, Harga Bersahabat</h1>
-        <p>Dipetik pagi hari, dikemas rapi, dan diantar cepat sampai depan rumah.</p>
-        <div class="hero-actions">
-          <a href="#produk" class="tombol tombol-primary">Belanja Sekarang</a>
-          <a href="#kontak" class="tombol tombol-secondary">Tanya Via WhatsApp</a>
-        </div>
-        <div class="hero-highlights">
-          <div>
-            <strong>100% Lokal</strong>
-            <p>Petani Bogor langsung kirim.</p>
-          </div>
-          <div>
-            <strong>Bayar di Tempat</strong>
-            <p>Praktis dan aman.</p>
-          </div>
-          <div>
-            <strong>Pilihan Paket</strong>
-            <p>Antar hemat untuk keluarga.</p>
-          </div>
-        </div>
+        <h1>Sayur Segar,<br />Harga Bersahabat 🌿</h1>
+        <p>
+          Langsung dari petani lokal. Diantar ke pintu rumah Anda setiap pagi!
+        </p>
+        <a href="#produk" class="tombol">Belanja Sekarang</a>
       </div>
 
-      <div class="hero-panel">
-        <img src="images/hero.jpg" alt="Sayur Segar Bu Ani" class="hero-img" />
-        <div class="hero-card">
-          <span>✨ Promo Hari Ini</span>
-          <h3>Paket Sayur Hemat</h3>
-          <p>3 jenis sayur segar + gratis ongkir.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-unggulan">
-      <h2>Kenapa Pilih Bu Ani?</h2>
-      <p class="subjudul">Kualitas, layanan, dan pengalaman belanja yang lebih ceria.</p>
-      <div class="unggulan-grid">
-        <article class="unggulan-card">
-          <span>🌱</span>
-          <h3>Sayur Organik</h3>
-          <p>Tanpa bahan kimia, tetap segar dan sehat untuk keluarga.</p>
-        </article>
-        <article class="unggulan-card">
-          <span>⚡</span>
-          <h3>Antar Cepat</h3>
-          <p>Pesan pagi, sayur sampai siang — siap masak hari ini juga.</p>
-        </article>
-        <article class="unggulan-card">
-          <span>💬</span>
-          <h3>Support Ramah</h3>
-          <p>Tim WA siap bantu rekomendasi dan saran menu.</p>
-        </article>
-      </div>
+      <!-- Ganti src dengan foto hero kamu -->
+      <img src="images/hero.jpg" alt="Sayur Segar Bu Ani" class="hero-img" />
     </section>
 
     <section id="produk" class="section-produk">
-      <div class="section-header">
-        <div>
-          <h2>Produk Kami</h2>
-          <p class="subjudul">Dipanen pagi hari — dijamin segar!</p>
-        </div>
-        <div class="promo-banner">
-          <strong>Paket Favorit:</strong> Bayam + Kangkung + Sawi hanya Rp 18.000.
-        </div>
-      </div>
-
-      <div class="paket-grid">
-        <article class="paket-card">
-          <h3>Paket Sayur Harian</h3>
-          <p>Bayam, wortel, dan kangkung segar untuk keluarga kecil.</p>
-          <span>Diskon 10%</span>
-        </article>
-        <article class="paket-card">
-          <h3>Paket Segar Mingguan</h3>
-          <p>Tomat, cabai, dan bayam siap untuk stok dapur selama 7 hari.</p>
-          <span>Gratis kirim</span>
-        </article>
-      </div>
+      <h2>Produk Kami</h2>
+      <p class="subjudul">Dipanen pagi hari — dijamin segar!</p>
 
       <table>
         <thead>
@@ -176,6 +107,7 @@
       <h2>Hubungi Kami 📞</h2>
       <p class="subjudul">Ada pertanyaan? Kirim pesan di bawah ini.</p>
       <div class="kontak-wrap">
+        <!-- Info Toko — contoh <ul> tanpa urutan -->
         <div class="kontak-info">
           <h3>Informasi Toko</h3>
           <ul>
@@ -185,6 +117,7 @@
             <li>⏰ Senin–Sabtu, 06.00–18.00 WIB</li>
           </ul>
 
+          <!-- Contoh penggunaan <a> untuk link sosmed dengan gambar PNG -->
           <div class="sosmed">
             <a href="#"
               ><img src="https://cdn.simpleicons.org/instagram" alt="Instagram"
@@ -198,78 +131,54 @@
           </div>
         </div>
 
-        <div class="kontak-panel">
-          <div class="kontak-kartu">
-            <h3>Chat Sekarang</h3>
-            <p>Pesan sayur lewat WhatsApp dan minta rekomendasi gratis.</p>
-            <a href="https://wa.me/6281234567890" class="tombol tombol-full tombol-secondary">Chat WA</a>
+        <!-- Form Kontak -->
+        <form id="form-kontak">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label><br />
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Contoh: Budi Santoso"
+              required
+            />
           </div>
 
-          <form id="form-kontak">
-            <div class="form-group">
-              <label for="nama">Nama Lengkap</label><br />
-              <input
-                type="text"
-                id="nama"
-                name="nama"
-                placeholder="Contoh: Budi Santoso"
-                required
-              />
-            </div>
+          <div class="form-group">
+            <label for="telepon">Nomor WhatsApp</label><br />
+            <input
+              type="tel"
+              id="telepon"
+              name="telepon"
+              placeholder="Contoh: 08123456789"
+              required
+            />
+          </div>
 
-            <div class="form-group">
-              <label for="telepon">Nomor WhatsApp</label><br />
-              <input
-                type="tel"
-                id="telepon"
-                name="telepon"
-                placeholder="Contoh: 08123456789"
-                required
-              />
-            </div>
+          <div class="form-group">
+            <label for="pesan">Pesan</label><br />
+            <textarea
+              id="pesan"
+              name="pesan"
+              rows="4"
+              placeholder="Tulis pesan kamu di sini..."
+              required
+            ></textarea>
+          </div>
 
-            <div class="form-group">
-              <label for="pesan">Pesan</label><br />
-              <textarea
-                id="pesan"
-                name="pesan"
-                rows="4"
-                placeholder="Tulis pesan kamu di sini..."
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="tombol tombol-full tombol-primary">
-              📨 Kirim Pesan
-            </button>
-            <p id="pesan-sukses">
-              😉 Pesan berhasil dikirim, kita bakal contact kalian secepatnya.
-            </p>
-          </form>
-        </div>
+          <button type="submit" class="tombol tombol-full">
+            📨 Kirim Pesan
+          </button>
+          <p id="pesan-sukses">
+            😉Pesan berhasil dikirim, kita bakal contact kalian secepatnya.
+          </p>
+        </form>
       </div>
     </section>
 
-    <a href="#kontak" class="quick-order">📦 Pesan Sekarang</a>
-    <div id="toast" class="toast"></div>
-
     <footer class="footer">
-      <div class="footer-grid">
-        <div>
-          <h3>Toko Sayur Bu Ani</h3>
-          <p>Sayur segar lokal dengan layanan cepat dan harga bersahabat.</p>
-        </div>
-        <div>
-          <h4>Kontak</h4>
-          <p>WA: 0812-3456-7890</p>
-          <p>Email: tokosayurbuani@gmail.com</p>
-        </div>
-        <div>
-          <h4>Jam Operasional</h4>
-          <p>Senin–Sabtu, 06.00–18.00 WIB</p>
-        </div>
-      </div>
-      <p class="footer-bottom">&copy; 2025 Toko Sayur Bu Ani &mdash; Bogor, Jawa Barat</p>
+      <p>&copy; 2025 Toko Sayur Bu Ani &mdash; Bogor, Jawa Barat</p>
+      <p>Dibuat dengan <strong>HTML, CSS &amp; JavaScript</strong> 💚</p>
     </footer>
 
     <script src="script.js"></script>
